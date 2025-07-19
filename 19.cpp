@@ -6,16 +6,16 @@ using namespace std;
 int main()
 {
 string name;
-int marks[5],per=0;
+int m1,m2,m3,m4,m5;
 float per;
 cout<<"Enter Student's Name :";
 cin>>name;
 cout<<"Enter Student's Marks of five subjects :";
-for(int i=1; i<=5; i++)
-{
-cin>>marks[i];
+cin>>m1>>m2>>m3>>m4>>m5;
+int total = m1+m2+m3+m4+m5;
+per=(total/500.0)*100;
+cout<<"Student's Name:"<<name<<endl;
+cout<<"Student's marks of five subject :"<<m1<<endl<<m2<<endl<<m3<<endl<<m4<<endl<<m5<<endl;
+cout<<"Student's Percentage :"<<per;
+return(0);
 }
-cout<<"Enter Student's Percentage :";
-cin>>per; 
-per= per%marks[i];
-cout<<""
